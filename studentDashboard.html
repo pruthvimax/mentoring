@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="index.html">Smart Mentoring</a>
+      <nav class="nav">
+        <a href="studentForm.html">New Record</a>
+        <a id="logout" href="#">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Your Mentoring Records</h2>
+      <p class="muted">View, edit or download your past mentoring records.</p>
+      <table class="table" id="recordsTable">
+        <thead>
+          <tr><th>Date</th><th>Semester</th><th>SGPA</th><th>Attendance</th><th>Goal</th><th>Mentor</th><th>HOD</th><th>Actions</th></tr>
+        </thead>
+        <tbody>
+          <!-- rows populated by app.js -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

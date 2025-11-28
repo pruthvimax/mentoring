@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mentoring Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="index.html">Smart Mentoring</a>
+      <nav class="nav"><a href="studentDashboard.html">Dashboard</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card form-card">
+      <h2>Student Mentoring Form</h2>
+      <form id="mentoringForm">
+        <div class="row">
+          <label class="col">Date<input type="date" name="date" class="input" required></label>
+          <label class="col">Semester<input name="semester" class="input"></label>
+        </div>
+
+        <div class="row">
+          <label class="col">Previous SGPA<input name="sgpa" class="input"></label>
+          <label class="col">Attendance %<input name="attendance" class="input"></label>
+        </div>
+
+        <label>Backlogs<input name="backlogs" class="input"></label>
+        <label>Achievements<textarea name="achievements" class="input"></textarea></label>
+        <label>Strengths<textarea name="strengths" class="input"></textarea></label>
+        <label>Weaknesses<textarea name="weaknesses" class="input"></textarea></label>
+        <label>Academic difficulties<textarea name="academicIssues" class="input"></textarea></label>
+        <label>Personal difficulties<textarea name="personalIssues" class="input"></textarea></label>
+        <label>Goals for current semester<textarea name="goals" class="input" required></textarea></label>
+
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Save Record</button>
+          <button class="btn outline" type="button" id="cancel">Cancel</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

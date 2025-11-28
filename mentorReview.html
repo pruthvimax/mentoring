@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mentor Review</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container"><a class="brand" href="index.html">Smart Mentoring</a></div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Mentor Review</h2>
+      <div id="recordView"></div>
+      <form id="mentorForm" class="form-card">
+        <label>Mentor Remarks<textarea name="mentorRemarks" class="input"></textarea></label>
+        <label>Signature (type name)<input name="mentorSignature" class="input"></label>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Save</button>
+          <a class="btn outline" id="back" href="staffDashboard.html">Back</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

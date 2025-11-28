@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register — Smart Mentoring</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="index.html">Smart Mentoring Book</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card form-card">
+      <h2>Create an account</h2>
+      <form id="registerForm">
+        <div class="row">
+          <label class="col">Full name
+            <input name="name" required class="input"></label>
+          <label class="col">USN / Reg No
+            <input name="usn" class="input"></label>
+        </div>
+        <div class="row">
+          <label class="col">Email
+            <input type="email" name="email" required class="input"></label>
+          <label class="col">Phone
+            <input name="phone" class="input"></label>
+        </div>
+        <div class="row">
+          <label class="col">Department
+            <input name="department" class="input"></label>
+          <label class="col">Role
+            <select name="role" required class="input">
+              <option value="">Select role</option>
+              <option value="student">Student</option>
+              <option value="staff">Staff / Mentor</option>
+              <option value="hod">HOD</option>
+            </select>
+          </label>
+        </div>
+        <div class="row">
+          <label class="col">Password
+            <input type="password" name="password" required class="input"></label>
+          <label class="col">Confirm Password
+            <input type="password" name="confirmPassword" required class="input"></label>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Register</button>
+          <a class="link" href="login.html">Already have account?</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HOD Review</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar"><div class="container"><a class="brand" href="index.html">Smart Mentoring</a></div></header>
+
+  <main class="container">
+    <section class="card">
+      <h2>HOD Review</h2>
+      <div id="recordView"></div>
+      <form id="hodForm" class="form-card">
+        <label>HOD Remarks<textarea name="hodRemarks" class="input"></textarea></label>
+        <label>Signature (type name)<input name="hodSignature" class="input"></label>
+        <label><input type="checkbox" name="approved"> Approve</label>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Save</button>
+          <a class="btn outline" id="back" href="hodDashboard.html">Back</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
